@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>艦の攻略</title>
+		<style>
+			body {
+				background-color: rgb(255, 250, 232);
+			}
+			
+			button {
+				background-color: rgb(250, 235, 215);
+				border-style: none;
+				width: 38px;
+			}
+
+			.nav-box {
+				z-index: 2;
+				border-style: double;
+				border-color: rgb(0, 255, 255);
+				margin-left: 0;
+				margin-right: 0;
+				width: 9%;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav-box">
+			<nav>
+				&nbsp;<button style="width: 98%;height: 30px;"
+					onclick="document.getElementById('戦艦').innerHTML='戦艦'">閉じる-戦艦</button>
+				<br />
+				&nbsp;<button style="width: 98%;;height: 30px;"
+					onclick="document.getElementById('巡洋戦艦').innerHTML='巡洋戦艦'">閉じる-巡洋戦艦</button>
+				<br />
+				&nbsp;<button style="width: 98%;;height: 30px;"
+					onclick="document.getElementById('ミサイル').innerHTML='ミサイル'">閉じる-ミサイル</button>
+				<br />
+				&nbsp;<button style="width: 98%;;height: 30px;"
+					onclick="document.getElementById('航空母艦').innerHTML='航空母艦'">閉じる-航空母艦</button>
+				<br />
+				&nbsp;<button style="width: 98%;;height: 30px;"
+					onclick="document.getElementById('巡洋艦').innerHTML='巡洋艦'">閉じる-巡洋艦</button>
+				<br />
+				&nbsp;<button style="width: 98%;;height: 30px;"
+					onclick="document.getElementById('駆逐艦').innerHTML='駆逐艦'">閉じる-駆逐艦</button>
+				<br />
+				&nbsp;<button style="width: 98%;;height: 30px;"
+					onclick="document.getElementById('潜水艦').innerHTML='潜水艦'">閉じる-潜水艦</button>
+				<br />
+				&nbsp;<button style="width: 98%;;height: 30px;"
+					onclick="document.getElementById('その他').innerHTML='その他'">閉じる-その他</button>
+				<br />
+			</nav>
+		</div>
+		<div style="width: 40%;margin: auto;background-color: rgb(250, 235, 215);">
+			<div style="width: 100%;text-align: center;border-style: double;">
+				<a style="font-size: 24px;font-weight: bold;color: rgba(255, 0, 0, 0.6);">
+					艦の攻略（5.5.0）</a>
+			</div>
+			<div style="width: 100%;text-align: left;border-style: double;">
+				<p id="戦艦" onclick="document.getElementById('戦艦').innerHTML=
+					'<p>戦艦(T0)</p> \
+					ノースカロライナ:臨機応変(形態1)<br /> \
+					ヴィットリオ・ヴェネト<br /> \
+					ウルリヒ・フォン・フッテン<br /> \
+					リシュリュー:凱旋の歌<br /> \
+					サウスダコタ(BB-57):混戦<br /> \
+					ライオン:キング<br /> \
+					ウェストバージニア:スリガオ復讐者<br /> \
+					セント・ジョージ:巨砲の火力<br /> \
+					メリーランド:Fighting Mary<br /> \
+					<p>戦艦(T1)</p> \
+					ニュージャージー<br /> \
+					ヒンデンブルク<br /> L20<br /> \
+					長門:BIG SEVEN<br /> コンカラー<br /> \
+					ロドニー:BIG SEVEN<br /> <br />'">
+					戦艦</p>
+			</div>
+			<div style="width: 100%;text-align: left;border-style: double;">
+				<p id="巡洋戦艦" onclick="document.getElementById('巡洋戦艦').innerHTML=
+					'<p>巡洋戦艦(T0)</p> \
+					フッド:HMSの栄光<br /> \
+					十三号戦艦<br /> \
+					インヴィンシブル<br /> \
+					コンステレーション:先頭部隊<br /> \
+					<br /> <p>巡洋戦艦(T1)</p> \
+					レナウン:最後の栄光<br /> \
+					インコンパラブル<br /> <br />'">
+					巡洋戦艦</p>
+			</div>
+			<div style="width: 100%;text-align: left;border-style: double;">
+				<p id="ミサイル" onclick="document.getElementById('ミサイル').innerHTML=
+					'<p>ミサイル駆逐艦</p> \
+					鞍山<br /> 長春<br /> \
+					<p>ミサイル戦艦</p> \
+					ミズーリ:決戦の力<br /> \
+					JB<br /> \
+					<p>大型ミサイル巡洋艦</p> \
+					アラスカ<br /> グアム<br />  \
+					<p>防空ミサイル駆逐艦</p> \
+					ジャイアット<br /> <br />'">
+					ミサイル</p>
+			</div>
+			<div style="width: 100%;text-align: left;border-style: double;">
+				<p id="航空母艦" onclick="document.getElementById('航空母艦').innerHTML=
+					'<p>航空母艦(T0)</p> \
+					レキシントン(CV-2)<br /> \
+					ホーネット<br /> \
+					サラトガ:航空戦術教官<br /> \
+					<p>航空母艦(T1)</p> \
+					エンタープライズ:ビッグE<br /> \
+					ベニントン<br /> 赤城:奇襲<br /> \
+					<p>装甲空母(T0)</p> \
+					信濃:超航路戦<br /> \
+					<p>装甲空母(T1)</p> \
+					インドミタブル<br /> \
+					グラーフ・ツェッペリン<br /> \
+					大鳳<br /> ヴィクトリアス<br /> \
+					<p>軽空母(T0)</p> \
+					アローマンシュ<br /> \
+					<p>軽空母(T1)</p> \
+					飛鷹<br /> 隼鷹<br /> \
+					祥鳳<br /> 瑞鳳<br /> \
+					プリンストン<br /> <br />'">
+					航空母艦</p>
+			</div>
+			<div style="width: 100%;text-align: left;border-style: double;">
+				<p id="巡洋艦" onclick="document.getElementById('巡洋艦').innerHTML=
+					'<p>重巡洋艦(T0)</p> \
+					ウィチタ<br /> サンフランシスコ<br /> \
+					ボルチモア:朽ちない英魂<br /> セーラム<br /> \
+					<p>重巡洋艦(T1)</p> \
+					ポートランド<br /> \
+					ペンサコーラ<br /> \
+					<p>軽巡洋艦(T0)</p> \
+					ヘレナ:情報分析<br /> タリン<br /> \
+					<p>軽巡洋艦(T1)</p> \
+					シリアス<br /> 逸仙<br /> <br />'">
+					巡洋艦</p>
+			</div>
+			<div style="width: 100%;text-align: left;border-style: double;">
+				<p id="駆逐艦" onclick="document.getElementById('駆逐艦').innerHTML=
+					'<p>駆逐艦(T0)</p> \
+					Z17<br /> ウゴリーノ・ヴィヴァルディ<br /> \
+					綾波<br /> 吹雪:伸るか反るか<br /> \
+					ル・ファンタスク<br /> \
+					<p>駆逐艦(T1)</p> \
+					フレッチャー<br /> ミンスク<br /> \
+					深雪<br /> 早春<br /> アメジスト<br /> \
+					バーフラー<br /> グローウォーム:重装備刺客<br /> \
+					黒潮<br /> ラフィー(DD-724)<br /> <br />'">
+					駆逐艦</p>
+			</div>
+			<div style="width: 100%;text-align: left;border-style: double;">
+				<p id="潜水艦" onclick="document.getElementById('潜水艦').innerHTML=
+					'<p>潜水艦(T0)</p> \
+					U-1405<br /> U47:群狼戦術<br /> \
+					アルバコア<br /> アーチャーフィッシュ<br /> \
+					U96<br /> <br /> \
+					<p>潜水艦(T1)</p> \
+					ノーチラス<br /> U-14<br /> U-81<br /><br />'">
+					潜水艦</p>
+			</div>
+			<div style="width: 100%;text-align: left;border-style: double;">
+				<p id="その他" onclick="document.getElementById('その他').innerHTML=
+					'<p>その他</p> \
+					最上<br /> 大淀:航空支援<br /> \
+					ロバーツ<br /> アバークロンビー<br /> \
+					北上:雷撃網<br /> 大井:雷撃網<br /> <br />'">
+					その他</p>
+			</div>
+		</div>
+		<br />
+		<div style="text-align: center;">
+			<br />
+			<a href="mailto:kamikaze476@outlook.com" style="color: rgb(0,0,0);text-decoration: none">wikiについてのご意見・ご要望があれば</a>
+			<br />
+			<a href="戦艦の攻略.html" target="_parent">刷新</a>
+		</div>
+		<p id="time" style="text-align: center;color: rgb(0, 255, 255);"></p>
+		<script>
+			if (new Date().getHours() > 21) {
+				document.getElementById("time").innerHTML = "おやすみなさい";
+			} else if (new Date().getHours() < 8) {
+				document.getElementById("time").innerHTML = "頑張ってもおやすみなさい？";
+			} else {
+				document.getElementById("time").innerHTML = "頑張って";
+			}
+		</script>
+		<p id="t" style="text-align: center;color: rgb(0, 255, 255);"></p>
+		<script>
+			var a = new Date();
+			document.getElementById("t").innerHTML = a;
+		</script>
+	</body>
+</html>
