@@ -178,7 +178,8 @@
 			<br />
 			<a href="戦艦の攻略.html" target="_parent">刷新</a>
 		</div>
-		<p id="time" style="text-align: center;color: rgb(0, 255, 255);"></p>
+		<p id="time" style="text-align: center;color: rgb(0, 0, 0);"></p>
+		<p id="t" style="text-align: center;color: rgb(0, 0, 0);"></p>
 		<script>
 			if (new Date().getHours() > 21) {
 				document.getElementById("time").innerHTML = "おやすみなさい";
@@ -187,9 +188,6 @@
 			} else {
 				document.getElementById("time").innerHTML = "頑張って";
 			}
-		</script>
-		<p id="t" style="text-align: center;color: rgb(0, 255, 255);"></p>
-		<script>
 			var a = new Date();
 			document.getElementById("t").innerHTML = a;
 		</script>
