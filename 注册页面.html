@@ -48,10 +48,38 @@
 			</div>
 		</form>
 		<br />
-		<p id="time"></p>
+		<p id="t" style="text-align: center;color: rgb(0, 0, 0);"></p>
 		<script>
-			var a = new Date();
-			document.getElementById("time").innerHTML = a;
+			var time,hour,day,week,month;
+			time = new Date();
+			month = time.getMonth()+1;
+			day = time.getDate();
+			week = time.getDay();
+			switch(week){
+				case 1:
+					week = "月曜日";
+					break;
+				case 2:
+					week = "火曜日";
+					break;
+				case 3:
+					week = "水曜日";
+					break;
+				case 4:
+					week = "木曜日";
+					break;
+				case 5:
+					week = "金曜日";
+					break;
+				case 6:
+					week = "土曜日";
+					break;
+				case 0:
+					week = "日曜日";
+					break;
+			}
+			hour = time.getHours();
+			document.getElementById("t").innerHTML =month+"月"+day+"日"+ hour+"時"+"&nbsp;"+week;
 		</script>
 	</body>
 </html>
