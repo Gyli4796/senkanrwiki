@@ -173,9 +173,6 @@
 		</div>
 		<br />
 		<div style="text-align: center;">
-			<br />
-			<a href="mailto:kamikaze476@outlook.com" style="color: rgb(0,0,0);text-decoration: none">wikiについてのご意見・ご要望があれば:<span style="color: rgb(79, 79, 226);">メール</span></a>
-			<br />
 			<a href="戦艦の攻略.html" target="_parent">刷新</a>
 		</div>
 		<p id="time" style="text-align: center;color: rgb(0, 0, 0);"></p>
@@ -188,8 +185,36 @@
 			} else {
 				document.getElementById("time").innerHTML = "頑張って";
 			}
-			var a = new Date();
-			document.getElementById("t").innerHTML = a;
+			var time,hour,day,week,month;
+			time = new Date();
+			month = time.getMonth()+1;
+			day = time.getDate();
+			week = time.getDay();
+			switch(week){
+				case 1:
+					week = "月曜日";
+					break;
+				case 2:
+					week = "火曜日";
+					break;
+				case 3:
+					week = "水曜日";
+					break;
+				case 4:
+					week = "木曜日";
+					break;
+				case 5:
+					week = "金曜日";
+					break;
+				case 6:
+					week = "土曜日";
+					break;
+				case 0:
+					week = "日曜日";
+					break;
+			}
+			hour = time.getHours();
+			document.getElementById("t").innerHTML =month+"月"+day+"日"+ hour+"時"+"&nbsp;"+week;
 		</script>
 	</body>
 </html>
