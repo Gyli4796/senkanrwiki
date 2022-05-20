@@ -215,6 +215,10 @@
 			}
 			hour = time.getHours();
 			document.getElementById("t").innerHTML =month+"月"+day+"日"+"&nbsp;"+week+"&nbsp;"+ hour+"時";
+			function ref() {
+				parent.location.reload("#t");
+			}
+			setTimeout('ref()',3600000);
 		</script>
 	</body>
 </html>
